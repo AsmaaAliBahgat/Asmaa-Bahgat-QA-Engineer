@@ -1,0 +1,80 @@
+1.Tax Values Removed After Applying Shipping Estimate
+Environment
+OpenCart Public Demo
+Browser
+Google Chrome
+Severity
+High
+Priority
+High
+Bug Type
+Functional / Data Integrity
+Status
+New
+
+
+2. Description
+When a user has a taxable product in the shopping cart and applies a shipping estimate from the Estimate Shipping & Taxes section, the shipping charge is applied successfully; however, previously displayed tax components are removed from the cart totals.
+The tax values remain missing after refreshing the page and are restored only after the user's session is reset through logout and login.
+This creates an inconsistent cart calculation state and may result in an incorrect total being presented to the customer.
+
+3. Preconditions
+User is logged in.
+A taxable product is available.
+The product has applicable tax components configured.
+Shopping cart contains at least one taxable item.
+Cart totals display the applicable tax values before shipping estimation.
+
+4. Steps to Reproduce
+Open the OpenCart Demo storefront.
+Log in with a valid customer account.
+Add a taxable product such as iPhone to the shopping cart.
+Navigate to Shopping Cart.
+Verify that the cart totals display the applicable tax components.
+Expand Estimate Shipping & Taxes.
+Select:
+Country: Egypt
+Region: Ad Daqahliyah
+Post Code: Valid postal code
+Click Get Quotes.
+Select Flat Shipping Rate — $8.00.
+Click Apply Shipping.
+Review the cart totals.
+Refresh the page.
+Review the cart totals again.
+Log out and log back in.
+Return to the cart and review the totals.
+
+5. Expected Result
+After applying the shipping method:
+The selected shipping charge should be added to the cart total.
+Existing tax calculations should remain valid or be recalculated according to the selected shipping destination.
+If the selected destination results in no applicable tax, the affected tax value should be explicitly recalculated to $0.00 or otherwise handled according to the configured tax rules.
+Refreshing the page should not cause an unexpected loss of valid cart calculation data.
+The cart should remain in a consistent financial state throughout the session.
+
+6. Actual Result
+After applying the shipping method:
+The shipping charge is applied successfully.
+Previously displayed Eco Tax and VAT values are removed from the cart totals.
+The missing tax values remain absent after refreshing the page.
+The original tax state is restored only after the user logs out and logs back in.
+
+Severity: High
+Priority: High
+
+Test Evidence
+
+## Test Evidence
+
+### 1. Before Applying Shipping Estimate
+![Before Shipping](../Evidence/BUG-001/01-Before-Shipping.png)
+
+### 2. After Applying Shipping Estimate
+![After Shipping](../Evidence/BUG-001/02-After-Shipping.png)
+
+### 3. After Page Refresh
+![After Refresh](../Evidence/BUG-001/03-After-Refresh.png)
+
+### 4. After Logout and Login
+![After Login](../Evidence/BUG-001/04-After-Login.png)
