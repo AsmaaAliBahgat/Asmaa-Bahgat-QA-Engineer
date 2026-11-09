@@ -71,10 +71,10 @@ Test Evidence
 ![Before Shipping](Manual Testing/OpenCart-Testing-Project/Evidence/Before Applying Shipping Estimate.png)
 
 ### 2. After Applying Shipping Estimate
-![After Shipping](../Evidence/After Applying Shipping Estimate.png)
+![After Shipping](Manual Testing/OpenCart-Testing-Project/Evidence/Applying Shipping Estimate.png)
 
 ### 3. After Page Refresh
-![After Refresh](../Evidence/After Page Refresh.png)
+![After Refresh](Manual Testing/OpenCart-Testing-Project/Evidence/After Page Refresh.png)
 
 ### 4. After Logout and Login
 ![After Login](Manual Testing/OpenCart-Testing-Project/Evidence/After Logout and Login.png)
