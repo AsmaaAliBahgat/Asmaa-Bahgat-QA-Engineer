@@ -68,13 +68,13 @@ Test Evidence
 ## Test Evidence
 
 ### 1. Before Applying Shipping Estimate
-![Before Shipping](../Evidence/BUG-001/01-Before-Shipping.png)
+![Before Shipping](../Evidence/Before Applying Shipping Estimate.png)
 
 ### 2. After Applying Shipping Estimate
-![After Shipping](../Evidence/BUG-001/02-After-Shipping.png)
+![After Shipping](../Evidence/After Applying Shipping Estimate.png)
 
 ### 3. After Page Refresh
-![After Refresh](../Evidence/BUG-001/03-After-Refresh.png)
+![After Refresh](../Evidence/After Page Refresh.png)
 
 ### 4. After Logout and Login
-![After Login](../Evidence/BUG-001/04-After-Login.png)
+![After Login](../Evidence/After Logout and Login.png)
