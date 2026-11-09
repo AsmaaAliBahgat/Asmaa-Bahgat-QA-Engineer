@@ -37,8 +37,8 @@ The objective is to evaluate the correctness and consistency of cart calculation
 
 | Deliverable | File / Location |
 |---|---|
-| Test Scenarios | Test-Documentation/Test-Scenarios.md |
-| Test Cases | Test-Documentation/Test-Cases.md |
+| Test Scenarios | Test-Scenarios.md |
+| Test Cases | Test-Cases.md |
 | Bug Reports | Bug-Reports/ |
 | Test Evidence | Evidence/ |
 | Test Summary Report | To be added after execution |
